@@ -9,7 +9,11 @@ import { llmName } from './lib/llm.js';
 import { FIXES } from './lib/catalog.js';
 import { DockerLab } from './lib/lab.js';
 
-const __dir = path.dirname(fileURLToPath(import.meta.url)), STATE_FILE = path.join(__dir, 'data', 'state.json');
+// const __dir = path.dirname(fileURLToPath(import.meta.url)), STATE_FILE = path.join(__dir, 'data', 'state.json');
+const __dir = path.dirname(fileURLToPath(import.meta.url)),
+      STATE_FILE = process.env.VERCEL
+        ? '/tmp/state.json'
+        : path.join(__dir, 'data', 'state.json');
 const PORT = process.env.PORT || 3000, USE_HINDSIGHT = !!process.env.HINDSIGHT_BASE_URL;
 const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
 let S, mem, lab = new DockerLab(), seeding = false, seedError = null;
