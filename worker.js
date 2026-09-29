@@ -1,4 +1,4 @@
-const BACKEND_URL = 'https://enclosure-decide-mazda-pour.trycloudflare.com';
+const BACKEND_URL = 'https://earnings-mounting-potential-extract.trycloudflare.com';
 
 export default {
   async fetch(request) {
