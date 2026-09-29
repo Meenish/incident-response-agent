@@ -1,4 +1,4 @@
-const BACKEND_URL = 'https://YOUR-CODESPACE-URL';
+const BACKEND_URL = 'https://sturdy-broccoli-r4jvw6j6j7wfpj55-3000.app.github.dev';
 
 export default {
   async fetch(request) {
