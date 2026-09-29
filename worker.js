@@ -1,4 +1,4 @@
-const BACKEND_URL = 'https://earnings-mounting-potential-extract.trycloudflare.com';
+const BACKEND_URL = 'https://fellow-humanity-schedules-class.trycloudflare.com';
 
 export default {
   async fetch(request) {
