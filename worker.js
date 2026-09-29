@@ -1,4 +1,4 @@
-const BACKEND_URL = 'https://sturdy-broccoli-r4jvw6j6j7wfpj55-3000.app.github.dev';
+const BACKEND_URL = 'https://enclosure-decide-mazda-pour.trycloudflare.com';
 
 export default {
   async fetch(request) {
